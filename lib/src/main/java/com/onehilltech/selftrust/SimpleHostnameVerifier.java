@@ -47,6 +47,17 @@ public class SimpleHostnameVerifier implements HostnameVerifier
   }
 
   /**
+   * Add a collection of hostnames
+   *
+   * @param hostnames
+   * @return
+   */
+  public boolean addAll (Collection <String> hostnames)
+  {
+    return this.hostnames_.addAll (hostnames);
+  }
+  
+  /**
    * Remove a hostname from the verifier.
    *
    * @param hostname
