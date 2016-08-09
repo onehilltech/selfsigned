@@ -85,13 +85,13 @@ public class TheApplication extends Application
 
 Make sure you add the `Application` class to `AndroidManifest.xml`.
 
-```
-    <application
-        android:name="[package].TheApplication"
-        
-        >
-        
-    </application>
+```xml
+<application
+    android:name="[package].TheApplication"
+    
+    >
+    
+</application>
 ```
 
 Add the public certificate to the application's assets. For example, if
