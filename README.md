@@ -26,7 +26,10 @@ buildscript {
 }
 
 dependencies {
-  compile com.github.onehilltech:android-selftrust:x.y.z
+  compile com.github.onehilltech.android-selftrust:core:x.y.z
+  
+  // Using Android Volley
+  compile com.github.onehilltech.android-selftrust:volley:x.y.z
 }
 ```
 
@@ -101,7 +104,7 @@ to `main/assets/server.crt` (or the assets folder for the target configuration).
 ### Android Volley
 
 Use `VolleySelfTrust` to create a `RequestQueue` that is configured to use the
-public certificate stored in the applications assets:
+public certificate bundled as an asset:
 
 ```
 VolleySelfTrust.newRequestQueue (context, "server.crt")
