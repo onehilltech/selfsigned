@@ -41,4 +41,4 @@ SelfSigned.getDefaultHostnameVerifier ().add ("10.0.2.2");
 
 ### Android
 
-* See [[android-selfsigned|https://github.com/onehilltech/android-selfsigned]]
+* See [android-selfsigned](https://github.com/onehilltech/android-selfsigned)
