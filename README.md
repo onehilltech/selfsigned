@@ -3,7 +3,7 @@ selfsigned
 
 [![Download](https://jitpack.io/v/onehilltech/selfsigned.svg)](https://jitpack.io/#onehilltech/selfsigned)
 [![Build Status](https://travis-ci.org/onehilltech/selfsigned.svg)](https://travis-ci.org/onehilltech/selfsigned)
-[![codecov.io](http://codecov.io/github/onehilltech/selfsigned/coverage.svg?branch=master)](http://codecov.io/github/onehilltech/selfsigned?branch=master)
+[![codecov](https://codecov.io/gh/onehilltech/selfsigned/branch/master/graph/badge.svg)](https://codecov.io/gh/onehilltech/selfsigned)
 
 A simple library for supporting self-signed certificates in Java
 
