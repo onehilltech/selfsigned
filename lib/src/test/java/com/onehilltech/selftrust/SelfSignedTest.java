@@ -3,8 +3,7 @@ package com.onehilltech.selftrust;
 import com.onehilltech.selfsigned.DefaultHostnameVerifier;
 import com.onehilltech.selfsigned.SelfSigned;
 
-import junit.framework.Assert;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 import javax.net.ssl.HttpsURLConnection;

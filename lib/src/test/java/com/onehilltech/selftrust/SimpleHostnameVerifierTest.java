@@ -2,9 +2,8 @@ package com.onehilltech.selftrust;
 
 import com.onehilltech.selfsigned.SimpleHostnameVerifier;
 
-import junit.framework.Assert;
-
 import org.junit.Test;
+import org.junit.Assert;
 
 public class SimpleHostnameVerifierTest
 {
