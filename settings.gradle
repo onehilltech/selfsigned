@@ -1,2 +1,1 @@
-include ':core' ,
-        ':android-volley'
+include ':lib'
