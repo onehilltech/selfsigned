@@ -1,11 +1,11 @@
-android-selftrust
-=================
+selfsigned
+==========
 
-[![Download](https://jitpack.io/v/onehilltech/android-selftrust.svg)](https://jitpack.io/#onehilltech/android-selftrust)
-[![Build Status](https://travis-ci.org/onehilltech/android-selftrust.svg)](https://travis-ci.org/onehilltech/android-selftrust)
-[![codecov.io](http://codecov.io/github/onehilltech/android-selftrust/coverage.svg?branch=master)](http://codecov.io/github/onehilltech/android-selftrust?branch=master)
+[![Download](https://jitpack.io/v/onehilltech/selfsigned.svg)](https://jitpack.io/#onehilltech/selfsigned)
+[![Build Status](https://travis-ci.org/onehilltech/selfsigned.svg)](https://travis-ci.org/onehilltech/selfsigned)
+[![codecov.io](http://codecov.io/github/onehilltech/selfsigned/coverage.svg?branch=master)](http://codecov.io/github/onehilltech/selfsigned?branch=master)
 
-A simple library for supporting self-signed certificates in Android
+A simple library for supporting self-signed certificates in Java
 
 * Integrate with services that use **self-signed certificates**: 
 * **Preserve** existing security measures on the mobile device
@@ -26,10 +26,10 @@ buildscript {
 }
 
 dependencies {
-  compile com.github.onehilltech.android-selftrust:core:x.y.z
+  compile com.github.onehilltech.selfsigned:core:x.y.z
   
   // Using Android Volley
-  compile com.github.onehilltech.android-selftrust:volley:x.y.z
+  compile com.github.onehilltech.selfsigned:volley:x.y.z
 }
 ```
 
@@ -101,7 +101,9 @@ Add the public certificate to the application's assets. For example, if
 the certificate is in a file named `server.crt`, then it must be added
 to `main/assets/server.crt` (or the assets folder for the target configuration).
 
-### Android Volley
+### Android
+
+* See [[android-selfsigned|https://github.com/onehilltech/android-selfsigned]]
 
 Use `VolleySelfTrust` to create a `RequestQueue` that is configured to use the
 public certificate bundled as an asset:
