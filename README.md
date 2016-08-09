@@ -33,7 +33,8 @@ dependencies {
 ## Getting Started
 
 Manually define the list of hostnames/IP addresses that are using self-signed 
-certificates. It is easiest to define the list as a resource:
+certificates. It is best to define the list as a resource so you can have
+different list for different Gradle configurations:
 
 ```xml
 <resources>
@@ -92,3 +93,20 @@ Make sure you add the `Application` class to `AndroidManifest.xml`.
         
     </application>
 ```
+
+Add the public certificate to the application's assets. For example, if
+the certificate is in a file named `server.crt`, then it must be added
+to `main/assets/server.crt` (or the assets folder for the target configuration).
+
+### Android Volley
+
+Use `VolleySelfTrust` to create a `RequestQueue` that is configured to use the
+public certificate stored in the applications assets:
+
+```
+VolleySelfTrust.newRequestQueue (context, "server.crt")
+```
+
+Now, request executed on the returned `RequestQueue` that interact with an 
+hostname/IP address defined in the resources above will not throw the usual 
+security exceptions.
