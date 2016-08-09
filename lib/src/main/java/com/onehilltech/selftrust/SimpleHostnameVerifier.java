@@ -56,7 +56,7 @@ public class SimpleHostnameVerifier implements HostnameVerifier
   {
     return this.hostnames_.addAll (hostnames);
   }
-  
+
   /**
    * Remove a hostname from the verifier.
    *
