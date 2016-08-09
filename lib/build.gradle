@@ -13,3 +13,12 @@ compileJava {
     options.fork = true
     options.incremental = true
 }
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
+check.dependsOn jacocoTestReport
