@@ -33,7 +33,7 @@ dependencies {
 ## Getting Started
 
 Manually define the list of hostnames/IP addresses that are using self-signed 
-certificates and trust. It is easiest to define the list as a resource:
+certificates. It is easiest to define the list as a resource:
 
 ```xml
 <resources>
