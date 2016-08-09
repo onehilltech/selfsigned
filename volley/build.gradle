@@ -39,6 +39,7 @@ android {
 }
 
 dependencies {
+    compile project (':core')
     compile 'com.android.volley:volley:1.0.0'
 
     androidTestCompile 'junit:junit:4.11'
