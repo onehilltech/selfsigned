@@ -1,4 +1,4 @@
-package com.onehilltech.selftrust;
+package com.onehilltech.selftrust.android;
 
 import java.util.HashSet;
 

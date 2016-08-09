@@ -1,4 +1,4 @@
-package com.onehilltech.selftrust;
+package com.onehilltech.selftrust.android;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -6,6 +6,12 @@ import java.util.HashSet;
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;
 
+/**
+ * @class SimpleHostnameVerifier
+ *
+ * Implementation of HostnameVerifier that built atop a list of trusted hostnames
+ * and/or IP addresses.
+ */
 public class SimpleHostnameVerifier implements HostnameVerifier
 {
   /// Collection of host names we accept.
