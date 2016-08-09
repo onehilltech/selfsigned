@@ -1,5 +1,5 @@
-self-trust
-==================
+android-selftrust
+=================
 
 [![Download](https://jitpack.io/v/onehilltech/android-selftrust.svg)](https://jitpack.io/#onehilltech/android-selftrust)
 [![Build Status](https://travis-ci.org/onehilltech/android-selftrust.svg)](https://travis-ci.org/onehilltech/android-selftrust)
